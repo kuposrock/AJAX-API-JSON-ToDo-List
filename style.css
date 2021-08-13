@@ -1,20 +1,87 @@
-body{
+body {
+  /* background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0)),url("unnamed.jpg"); */
+  background: linear-gradient(rgb(15, 172, 245), rgba(10, 192, 137, 0.712));
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: Georgia, serif;
+}
 
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0)),url("Untitled.png");
-    background-repeat:no-repeat;
-    background-size:200px;
-    padding: 0;
-    margin: 0;
+.inputArea {
+}
+.container {
+  width: 50%;
+  min-width: 350px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+form {
+  display: flex;
+  margin: 20px auto;
+  text-align: center;
+}
+input {
+  flex: 2;
+  height: 50px;
+  border: none;
+  font-family: Georgia;
+  padding-left: 20px;
+  font-size: 20px;
+}
+button {
+  font-family: Georgia, serif;
+  border: none;
+  font-size: 20px;
+  color: black;
+  font-weight: bolder;
+}
+
+button:hover{
+    color: white;
+    background-color:darkturquoise;
 }
 
 
+h1 {
+  font-size: 48px;
+  color: black;
+}
+ul{
+margin: 20px auto;
+background-color: rgba(240, 249, 255, 1);
+min-height: 300px;
+text-align: left;
+padding:0;
+font-size: 28px;
 
-.container{
-    border-radius: 20px;
-    background-color: rgba(240, 249, 255,.8);
-    padding: 30px;
-    width:60%;
-    height:500px;
-    margin: 50px auto;
-    text-align: center;
+}
+li{
+    list-style: none;
+    width:inherit;
+    padding-left:30px;
+    margin:0;
+    padding: 5px 0;
+    line-height: 50px;
+    border-bottom: 1px solid black;
+}
+
+.edit{
+    font-family: Georgia, serif;
+    border: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    height: 50px;
+    float:right;
+    
+}
+.delete{
+    height: 50px;
+    font-family: Georgia, serif;
+    border: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    float:right;
 }
