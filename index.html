@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>To-Do List</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
 
-          <div class="container">
-            <h1>Axios To-Do List</h1><br>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <title>To-Do List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Axios To-Do List</h1><br>
+
+        <form name="listForm"> 
+            <input type="text" name="inputTitle" class="addItemInput" id="inputTitle" placeholder="Title" required>
+            <br>
+            <input type="text"name="inputDesc"class="addItemInput" id="inputDesc" placeholder="Description" required>
+            <br>
+            <input type="text" name="inputURL"class="addItemInput" id="inputURL" placeholder="Img URL" required>
+            <br>
+            <button type="submit" class="addItem" id="buttonAddItem">Add Item</button>
+        </form>
+
+        <div class="listContainer">
+            Listed Items Below
+            <div id="listItem" class="listItem">
+                <div class="itemNumber">1. </div>
+                <div class="itemTitle" >A long Title much too much for this.</div>
+
+             <div class="imgDesc">
+                    <img src="https://468915-1496741-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/01/cat-facial-expressions.jpg">
+                    <div class="itemDisc">Lorem ipsum dolor sit amet, consectetur adipi
+                        scing elit, sed do eiusmod tempor incididunt ut labore et dol
+                        ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati
+                        on ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
+                        rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugi
+                        at nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                        in culpa qui officia deserunt mollit anim id est laborum.</div>
+             </div>
+                <input type="checkbox" class="itemCheckBox" id="checkbox" name="checkbox" value="completed">
+                <button class="edit" id="buttonEdit">Edit</button>
+                <button class="delete" id="buttonDelete">Delete</button>
+            </div>
+            <div id="listItem" class="listItem">
+                <div class="itemNumber">1. </div>
+                <div class=itemTitle>A long Title much too much for this.</div>
+
+             <div class="imgDesc">
+                    <img src="https://468915-1496741-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/01/cat-facial-expressions.jpg">
+                    <div class=itemDisc>Some wordsa</div>
+             </div>
+                <input type="checkbox" class="itemCheckBox" id="checkbox" name="checkbox" value="completed">
+                <button class="edit" id="buttonEdit">Edit</button>
+                <button class="delete" id="buttonDelete">Delete</button>
+            </div>
             
-                <form method="post">
-                    <input type="text" id="myInput" placeholder="Item"/>
-                    <button type="button" class="addItem">Add Item</button>
-                  </form>
-       
-   
-                <ul class=list>
-                    <li>1.<button class="edit">Edit</button> <button class="delete">Delete</button></li>
-                    <li>1.<button class="edit">Edit</button> <button class="delete">Delete</button></li>
-                </ul>
-            
+        </div>
+
+
+
         <script src="app.js"></script>
-    </body>
+</body>
+
 </html>
