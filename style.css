@@ -87,15 +87,15 @@ h1 {
   display: inline;
   font-size: 30px;
 }
-.itemDisc{
+.itemDescription{
   font-size: 18px;
   display: inline;
   text-align: left;
  
 }
-.imgDesc{
-  display: inline-block;
-  line-height: 25px;
+.imgTextContainer{
+  display: block;
+  line-height: 20px;
   text-align: left;
   padding: 20px;
 }
