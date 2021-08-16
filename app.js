@@ -3,7 +3,7 @@ var data = [];
 var listContainer = document.getElementsByClassName("listContainer");
 var checkboxes = document.getElementsByClassName("itemCheckBox");
 
-for(checks of checkboxes){
+for(var checks of checkboxes){
     if(checks.checked){
     console.log("checked");
     }
