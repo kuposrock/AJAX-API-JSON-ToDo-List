@@ -38,7 +38,7 @@ button {
   font-size: 20px;
   color: black;
   font-weight: bolder;
-padding: 10px;
+  padding: 10px;
 }
 
 button:hover{
@@ -68,20 +68,19 @@ h1 {
   }
 .listItem{
   width:100%;
-  border-radius: 20px;
   text-align: center;
   background-color: rgb(212, 255, 251);
   margin:20px 0;
-  border: 2px solid rgb(1, 55, 124);
   padding-bottom: 20px;
+
 }
 .itemCheckBox{
   margin: 0;
   padding: 0;
-  display: inline-flex;
   vertical-align: bottom;
   width: 50px;
   height: 50px;
+
 }
 .itemTitle{
   display: inline;
@@ -90,14 +89,15 @@ h1 {
 .itemDescription{
   font-size: 18px;
   display: inline;
-  text-align: left;
- 
+  text-align: justify;
 }
 .imgTextContainer{
   display: block;
   line-height: 20px;
-  text-align: left;
-  padding: 20px;
+  text-align: center;
+  padding: 5px 20px;
+  min-height:80px;
+
 }
 .itemNumber{
 width:20px;
@@ -105,15 +105,15 @@ display: inline;
 font-size: 40px;
 }
 img{
-  margin:0;
+  margin:auto;
   object-fit: scale-down;
   max-height: 100%;
   max-width: 25%;
-  margin:10px 20px 0 0;
-  margin-left: 20px;
-  float: left;
+  display: block;
+  
+  
 }
-.edit{
+.editButton{
     font-family: Georgia, serif;
     border: none;
     font-size: 20px;
@@ -124,7 +124,7 @@ img{
   
  
 }
-.delete{
+.deleteButton{
     height: 50px;
     font-family: Georgia, serif;
     border: none;
