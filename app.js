@@ -3,10 +3,18 @@ var data = [];
 var listContainer = document.getElementsByClassName("listContainer");
 var checkboxes = document.getElementsByClassName("itemCheckBox");
 
-for(var checks of checkboxes){
-    if(checks.checked){
-    console.log("checked");
-    }
+
+
+for(var checkbox of checkboxes){
+
+    checkbox.addEventListener('change', function(e) {
+        if (this.checked) {
+          
+        } else {
+          console.log("Checkbox is not checked..");
+        }
+      });
+
 }
 
 document.addEventListener("DOMContentLoaded", getData());
@@ -24,8 +32,13 @@ function getData() {
     xhr.send();
 }
 
+
+function deleteChildNodes(target){
+
+}
+
 function parseDataToWebsite(items) {
-    for (i in items) {
+    for (var i in items) {
         createIndividualPost(items[i], i);
     }
 }
@@ -44,7 +57,7 @@ function createIndividualPost(post, number) {
     itemTitle.innerText = (post.title === undefined) ? "Untitled": " "+ post.title;
 
     var img = document.createElement("img");
-    (post.imgUrl === undefined) ? img.style.display ='none' :img.src = post.imgUrl;
+    (post.imgUrl === undefined) ? img.style.display ='none' : img.src = post.imgUrl;
 
     var itemDescription = document.createElement("div");
     itemDescription.classList.add("itemDescription");
