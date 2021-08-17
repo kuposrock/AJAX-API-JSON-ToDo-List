@@ -19,37 +19,20 @@
         <form name="listForm"> 
             <input type="text" name="inputTitle" class="addItemInput" id="inputTitle" placeholder="Title" required>
             <br>
-            <input type="text"name="inputDesc"class="addItemInput" id="inputDesc" placeholder="Description" required>
+            <input type="text"name="inputDesc" class="addItemInput" id="inputDesc" placeholder="Description" required>
             <br>
-            <input type="text" name="inputURL"class="addItemInput" id="inputURL" placeholder="Img URL" required>
+            <input type="text" name="inputURL" class="addItemInput" id="inputURL" placeholder="Img URL" >
             <br>
-            <button type="submit" class="addItem" id="buttonAddItem">Add Item</button>
+            <button name="submitButton" class="addItem" id="buttonAddItem">Add Item</button>
         </form>
-
+        <h1>Listed Items Below</h1>
         <div class="listContainer">
-            Listed Items Below
-            <div class="listItem">
-                <div class="itemNumber">1. </div>
-                <div class="itemTitle" >A long Title much too much for this.</div>
-             <div class="imgTextContainer">
-                    <img src="https://468915-1496741-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/01/cat-facial-expressions.jpg">
-                    <div class="itemDescription">Lorem ipsum dolor sit amet, consectetur adipi
-                        scing elit, sed do eiusmod tempor incididunt ut labore et dol
-                        ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati
-                        on ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
-                        rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugi
-                        at nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                        in culpa qui officia deserunt mollit anim id est laborum.</div>
-            </div>
-                <input type="checkbox" class="itemCheckBox"><button class="editButton">Edit</button><button class="deleteButton">Delete</button>
-               
-            </div>
-        
+            
 
         </div>
 
 
-
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="app.js"></script>
 </body>
 
